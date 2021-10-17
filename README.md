@@ -35,9 +35,10 @@ npm install
 - Populate it with **Project id** and **Private key**
   ex:
 
-  ```REACT_APP_CHAT_ENGINE_ID="05e62267-xxxx-yyyy-zzzz-673b5a93832b"
+```
+  REACT_APP_CHAT_ENGINE_ID="05e62267-xxxx-yyyy-zzzz-673b5a93832b"
   REACT_APP_CHAT_ENGINE_KEY="9296a23a-xxxx-yyyy-zzzz-6e2d8c7b046e"
-  ```
+```
 
 - start the server
   ```bash
