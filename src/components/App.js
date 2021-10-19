@@ -16,6 +16,9 @@ function App() {
           <Switch>
             <Route path="/chats" component={Chats} />
             <Route path="/" component={Login} />
+            {/* note: path="/" need to be kept at last as switch renders the first match
+            we could have also used "exact" property as it will display the component
+            when there is exact path match */}
           </Switch>
         </AuthProvider>
       </Router>

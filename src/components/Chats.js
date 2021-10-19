@@ -1,5 +1,5 @@
 import React from "react";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
 import { ChatEngine } from "react-chat-engine";
 import { auth } from "../firebase";
@@ -7,7 +7,6 @@ import { useAuth } from "../contexts/AuthContext";
 import axios from "axios";
 
 const Chats = () => {
-  const didMountRef = useRef(false);
   const [loading, setLoading] = useState(true);
   const { user } = useAuth(); // { user } data from authentication
   const history = useHistory();
@@ -23,10 +22,8 @@ const Chats = () => {
     //an array with our data, file name, file type
     return new File([data], "userPhoto.jpg", { type: "image/jpeg" });
   };
-  useEffect(() => {
-    if (!didMountRef.current) {
-      didMountRef.current = true;
-
+  useEffect(
+    () => {
       if (!user) {
         history.push("/");
         return;
@@ -61,10 +58,12 @@ const Chats = () => {
               .catch((err) => console.log(err));
           });
         });
-    }
-  }, [user, history]);
+    },
+    // }
+    [user, history]
+  );
   //when we first load the page then 'user' will be undefined as it won't yet be fetched
-  if (!user || loading) return <div />;
+  if (!user || loading) return "...loading";
 
   return (
     <div className="chats-page">
