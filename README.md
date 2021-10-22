@@ -5,11 +5,9 @@ _FB messenger clone but better!😉_
 **Test it out:
 [BetterMessenger](https://better-messenger.netlify.app)**
 
-![Chat Application](https://i.ibb.co/GJwyy9m/Bv
 
 https://user-images.githubusercontent.com/63813872/138418308-d417a651-9329-4277-bfd7-a730201b5cde.mov
 
-9-Js3-QLOLY-HD.jpg)
 
 ## Description
 
