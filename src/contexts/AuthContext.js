@@ -24,7 +24,7 @@ export function AuthProvider({ children }) {
   const value = { user };
 
   return (
-    /*react context is a one big object which contains all the data(here: user data)
+    /*react context is a one big object which contains all the data(here: 'user' data)
     and it wraps all the children component,
     provides value(here: user data) to all the children component*/
     <AuthContext.Provider value={value}>
