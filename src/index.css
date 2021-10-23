@@ -55,6 +55,8 @@
   right: 0px;
 }
 
+/* Login Card */ 
+
 #login-card {
   position: relative;
   top: calc(50vh - 144px);
